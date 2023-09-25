@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+@media (max-width: 565px){
+    .main {
+        display: none;
+        width: 350px;
+    }
+    .main p {
+        width: 300px !important;
+    }
+    .after-submit {
+        width: 350px;
+    }
+    .after-submit .description {
+        width: 270px !important;
+    }
+}
+.after-submit {
+    display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px;
+    font-family: "Overpass";
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 39px 0px 400px -115px rgba(0,0,0,0.63) inset;
+
+}
+.main h1 {
+    color: white;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+.main p {
+    width: 360px;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    line-height: 1.6em;
+}
+.main img {
+    width: 50px;
+    background-color: hsl(213, 19%, 20%);
+    padding: 15px;
+    border-radius: 50%;
+    margin: 5px 0px 15px;
+}
+
+.main .rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.main .rating span {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    background-color: hsl(213, 19%, 24%);
+    padding: 15px 20px;
+    border-radius: 50%;
+    width: 50px;
+    color: hsl(217, 12%, 63%);
+    transition: 0.4s ease ;
+    transition-property: background-color,color;
+}
+.main .rating span:hover {
+    cursor: pointer;
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.main button {
+    background-color: hsl(25, 97%, 53%);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 10px;
+    font-family: "Overpass";
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.main button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+.change-color-span {
+    background-color: hsl(25, 97%, 53%) !important;
+    color: white !important;
+}
+/* After Submit */
+.after-submit {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 35px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px;
+    font-family: "Overpass";
+    padding: 40px 40px 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 39px 0px 400px -115px rgba(0,0,0,0.63) inset;
+    
+}
+.after-submit p:nth-child(2){
+    background-color: hsl(213, 19%, 22%);
+    font-size: 15px;
+    padding: 7px 20px;
+    border-radius: 20px;
+    color: hsl(25, 97%, 53%);
+}
+.after-submit .description{
+    width: 365px;
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: -15px;
+}
+
+.after-submit h2 {
+    color: white;
+    font-size: 30px;
+}
