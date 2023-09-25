@@ -8,7 +8,8 @@ btn.addEventListener("click",function(e){
             e.preventDefault();
         }else {
             document.querySelector(".main").style.display = "none";
-        document.querySelector(".after-submit").style.display = "flex";
+            document.querySelector(".after-submit").style.display = "flex";
+            span.setAttribute("aria-selected","true")
         }
     })
 })
@@ -18,13 +19,16 @@ myspans.forEach(function(span){
             if(e.target === myspans[i]){
                 if(myspans[i].classList.contains("change-color-span")){
                     myspans[i].classList.remove("change-color-span")
+                    myspans[i].setAttribute("aria-selected","false")
                 }else {
                     myspans[i].classList.add("change-color-span")
-                    myrate.innerHTML = myspans[i].innerHTML || "0";
+                    myrate.innerHTML = myspans[i].innerHTML;
+                    myspans[i].setAttribute("aria-selected","true")
                 }
             }else if(e.target !== myspans[i]){
                 if(myspans[i].classList.contains("change-color-span")){
                     myspans[i].classList.remove("change-color-span")
+                    myspans[i].setAttribute("aria-selected","false")
                 }
             }
         }
