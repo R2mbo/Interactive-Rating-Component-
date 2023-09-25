@@ -18,31 +18,35 @@
   </style>
 </head>
 <body>
-  <div class="main">
-    <img src="./images/icon-star.svg" alt="Yellow Star">
+  <div role="main" class="main">
+    <figure>
+    <img src="./images/icon-star.svg" role="img" alt="Yellow Star">
+    </figure>
     <h1>How did we do?</h1>
     <p>Please let us know how we did with your support request. All feedback is appreciated 
     to help us improve our offering!</p>
-    <div class="rating">
-      <span>1</span>
-      <span>2</span>
-      <span>3</span>
-      <span>4</span>
-      <span>5</span>
+    <div role="radiogroup" class="rating">
+      <span role="radio">1</span>
+      <span role="radio">2</span>
+      <span role="radio">3</span>
+      <span role="radio">4</span>
+      <span role="radio">5</span>
     </div>
     <button>submit</button>
   </div>
-  <div class="after-submit">
-    <img src="./images/illustration-thank-you.svg" alt="">
+  <div role="article" class="after-submit">
+    <figure>
+      <img src="./images/illustration-thank-you.svg" alt="">
+    </figure>
     <p>You selected <span></span> out of 5</p>
     <h2>Thank you!</h2>
     <p class="description">We appreciate you taking the time to give a rating. If you ever need more support, 
       don't hesitate to get in touch!</p>
   </div>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/R2mbo" target="_blank">Marwan Ashraf</a>.
-  </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
